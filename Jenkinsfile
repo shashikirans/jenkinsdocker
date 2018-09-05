@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build image') {
             steps {
-                sh 'docker.build("gitviz-node")''
+                sh 'docker.build("gitviz-node")'
             }
         }
         stage('Deliver for production') {
